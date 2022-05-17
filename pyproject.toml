@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "daily-nousance"
+version = "0.0.0"
+description = ""
+authors = ["Milo Weinberg <iapetus011@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+disnake = "^2.5.1"
+aiohttp = "^3.8.1"
+dataclasses-json = "^0.5.7"
+python-dotenv = "^0.20.0"
+arrow = "^1.2.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 127
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 127
